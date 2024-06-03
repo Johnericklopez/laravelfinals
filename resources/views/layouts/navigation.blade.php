@@ -78,7 +78,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="{{ route('employee.index') }}" class="nav-link">
+                <a href="{{ route('grace.index') }}" class="nav-link">
                     <i class="fas fa-link"></i>
                     <p>
                         {{ __('Employee Management') }}

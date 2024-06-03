@@ -34,6 +34,10 @@ Auth::routes();
     Route::get('employee\show', [\App\Http\Controllers\employeecontroller::class, 'show'])->name('employee.show');
     Route::get('employee/{id}/edit', [\App\Http\Controllers\employeecontroller::class, 'edit']);
     Route::put('employee/{id}/edit', [\App\Http\Controllers\employeecontroller::class, 'update']);
+
+    
+
+    Route::get('grace', [\App\Http\Controllers\gracecontroller::class, 'index'])->name('grace.index');
     
 
     Route::post('employee',[\App\Http\Controllers\employeecontroller::class, 'store']);
