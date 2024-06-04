@@ -20,16 +20,15 @@
 
 
 
-
-
-    <div class="card card-primary"  style="margin-left:200px; margin-right:200px;">
-              <div  style="Background-color:blue;" class="card-header " >
+    <div class="card card-primary"  style="margin-left:250px; margin-right:250px;">
+              <div  style="Background-color:#474787;" class="card-header " >
                 <h3  class="card-title">Add new employee</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form  style="padding:20px; " action="{{url('employee')}}" method="POST">
+              <form  style="padding:20px;" action ="{{url('employee/'.$editemp->id. '/edit')}}" method="POST">
               @csrf
+              @method('PUT')
                 <div   style="margin-left:50px; margin-right:50px;" class="card-body">
 
 
@@ -38,15 +37,15 @@
 
                   <div style="width:33%; margin:10px;"class="form-group">
                     <label for="exampleInputEmail1">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" value="{{old('firstname')}}" name="firstname" >
+                    <input type="text" class="form-control" id="exampleInputEmail1" value="{{$editemp-> firstname}}" name="firstname" >
                   </div>
                   <div style="width:34%; margin:10px;" class="form-group">
                     <label for="exampleInputPassword1">Last Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('lastname')}}" name="lastname">
+                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{$editemp->lastname}}" name="lastname">
                   </div>
                   <div style="width:33%; margin:10px;" class="form-group">
                     <label for="exampleInputPassword1">Middle Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('middlename')}}" name="middlename" >
+                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{$editemp-> middlename}}" name="middlename" >
                   </div>
 </div>
 
@@ -57,7 +56,7 @@
 <div style="display:flex;width:100%; ">
                   <div style="width:50%; margin:10px;" class="form-group">
                     <label for="exampleInputPassword1">Address</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"   value="{{old('address')}}" name="address">
+                    <input type="text" class="form-control" id="exampleInputPassword1"   value="{{$editemp-> address}}" name="address">
                   </div>
 
                   <div  style="width:50%; margin:10px;" class="form-group">
@@ -76,8 +75,6 @@
                   </div>
 
 </div>
-
-
 
 
 
@@ -115,7 +112,7 @@
 
                   <div style="width:40%; margin:10px;"class="form-group">
                     <label for="exampleInputPassword1">Zip</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('zip')}}" name="zip" >
+                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{$editemp-> zip}}" name="zip" >
                   </div>
 
 </div>
@@ -125,19 +122,19 @@
 <div style="display:flex;width:100%; ">
                   <div style="width:50%; margin:10px;" class="form-group">
                     <label for="exampleInputPassword1">Birthday</label>
-                    <input type="Date" class="form-control" id="exampleInputPassword1" value="{{old('birth')}}" name="birth">
+                    <input type="Date" class="form-control" id="exampleInputPassword1" value="{{$editemp-> birth}}" name="birth">
                   </div>
 
 
                   <div style="width:50%; margin:10px;" class="form-group">
                     <label for="exampleInputPassword1">Hired Date</label>
-                    <input type="Date" class="form-control" id="exampleInputPassword1" value="{{old('hired')}}" name="hired" >
+                    <input type="Date" class="form-control" id="exampleInputPassword1" value="{{$editemp-> hired}}" name="hired" >
                   </div>
 </div>
 
 
                   
-                  <div  style=" margin:10px;"class="form-group">
+                  <div style=" margin:10px;" class="form-group">
 
                   <label for="exampleInputPassword1">Department</label>
 
@@ -154,26 +151,17 @@
                   </div>
 
 
-                  <button style="background-color:red; color:white; width:100%; margin:0;"href="employee.show" type="submit" class="btn btn-primary">Submit</button>
-             
+                  
+
+                  
+
+
+               
+              
+                  <button style="background-color:#706fd3; color:white; width:100%;" href="employee.show" type="submit" class="btn btn-primary">Submit</button>
+          
               </form>
             </div>
-
-
-            <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Bounce Rate</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="{{url('home')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
 
 @endsection
 

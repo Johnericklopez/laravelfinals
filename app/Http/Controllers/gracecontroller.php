@@ -32,4 +32,13 @@ class gracecontroller extends Controller
    gracemodel::create($employees);   
        return redirect('grace');
     }
+
+
+    
+    public function destroy(int $id){
+        $employees = Employee::findOrFail($id);
+        $employees->delete();
+
+        return redirect('employees/show');
+    }
 }

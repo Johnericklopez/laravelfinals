@@ -68,7 +68,18 @@
                                 </button>
                             </a>
 
+                           
+                            </a>
+
                                 </td>
+
+                                <td>
+
+                                <a href="{{ url('employee/'.$infos->id.'/delete')}}">
+                            <button style="background-color:red; color:white;" class="btn btn-info btn-sm">
+                            <i  class="fa fa-pencil-square-o" aria-hidden="true"></i> Delete
+                                </button>
+</td>
 
                                     </tr>
                                 @endforeach
