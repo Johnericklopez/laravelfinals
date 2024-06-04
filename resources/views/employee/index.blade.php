@@ -45,24 +45,24 @@
 
 
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" value="{{old('firstname')}}" name="name" >
+                    <input type="text" class="form-control" id="name" value="{{old('name')}}" name="name" >
                  
 
 
 
                   
                     <label for="exampleInputPassword1">Email</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('lastname')}}" name="email">
+                    <input type="text" class="form-control" id="email"  value="{{old('email')}}" name="email">
                   
 
               
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('middlename')}}" name="password" >
+                    <input type="text" class="form-control" id="password"  value="{{old('password')}}" name="password" >
              
 
                  
                     <label for="exampleInputPassword1">Confirm Password</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('middlename')}}" name="conpass" >
+                    <input type="text" class="form-control" id="conpass"  value="{{old('conpass')}}" name="conpass" >
                    <br>
                     <button style="background-color:blue; color:white; width:20%; margin:0;"href="employee.show" type="submit" class="btn btn-primary">Submit</button>
 

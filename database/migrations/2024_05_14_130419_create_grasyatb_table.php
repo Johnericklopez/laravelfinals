@@ -13,17 +13,11 @@ return new class extends Migration
     {
         Schema::create('grasyatb', function (Blueprint $table) {
             $table->increments('id',true);
-            $table->string('firstname');
-            $table->string('lastname');
-            $table->string('middlename');
-            $table->string('address');
-            $table->string('country');
-            $table->string('state');
-            $table->string('city');
-            $table->string('zip');
-             $table->date('birth');
-            $table->date('hired');
-            $table->string('department');
+            $table->string('name');
+            $table->string('email');
+            $table->string('password');
+            $table->string('conpass');
+       
 
             $table->timestamps();
         });
