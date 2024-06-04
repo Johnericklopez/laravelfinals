@@ -19,17 +19,7 @@
     <!-- /.content-header -->
 
 
-<div>
 
-<div class="card card-primary">
-        <div class="info" class="card-header ">
-            <a href="{{ route('profile.show') }}" class="d-block"><img src="{{ asset('images/profile.jpg') }}" alt="AdminLTE Logo"
-                 class="brand-image img-circle elevation-3"
-                 style="opacity: .8"> {{ Auth::user()->name }}</a>
-        </div>
-    </div>
-
-</div>
 
 
     <div class="card card-primary"  style="margin-left:200px; margin-right:200px;">
