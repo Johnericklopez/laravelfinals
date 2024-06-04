@@ -6,11 +6,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 style="font-size:20px;" class="m-0">Employee Management</h1>
+            <h1 style="font-size:20px;" class="m-0">User profile</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-           >
+           
              
             </ol>
           </div><!-- /.col -->
@@ -19,12 +19,20 @@
     <!-- /.content-header -->
 
 
-
-
-
-    <div class="card card-primary"  style="margin-left:200px; margin-right:200px;">
+<div class = "q"style="display:flex; width:100%;">
+<div class="card card-primary"style="margin-left:80px; margin-right:10px;width:20%;height:40%;">
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+           
+                <img src="{{ asset('images/profile.jpg') }}" alt="AdminLTE Logo"
+                 class="brand-image img-circle elevation-3"
+                 style="width:100%;height:100%;">
+        </div>
+    </div>
+</div>
+<div class="card card-primary"  style="margin-left:10px; margin-right:80px;width:80%;">
               <div  style="Background-color:blue;" class="card-header " >
-                <h3  class="card-title">Add new employee</h3>
+                <h3  class="card-title"></h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -55,7 +63,9 @@
                  
                     <label for="exampleInputPassword1">Confirm Password</label>
                     <input type="text" class="form-control" id="exampleInputPassword1"  value="{{old('middlename')}}" name="conpass" >
-               
+                   <br>
+                    <button style="background-color:blue; color:white; width:20%; margin:0;"href="employee.show" type="submit" class="btn btn-primary">Submit</button>
+
 
 
 
@@ -64,15 +74,14 @@
 
 </div>
 
-
+</div>
 
 
 
                   
-<div style="width:20%; margin-left:70px;" class="form-group">
 
-                  <button style="background-color:blue; color:white; width:100%; margin:0;"href="employee.show" type="submit" class="btn btn-primary">Submit</button>
-</div>
+
+                  
 
 </div>
               </form>
