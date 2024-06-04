@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">{{ __('Employee Form') }}</h1>
+                    <h1 class="m-0">{{ __('USERS') }}</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -19,9 +19,34 @@
             <div class="row">
                 <div class="col-lg-12">
 
+             
+                <div>
+                
                     <div style="background-color:#006266; color:white;" class="alert alert-info">
-                    Employee Table
+                 
+                   User Table
+
+                   <button style="align:right; background-color:blue; color:white; width:10%; margin:0;"href="employee.show" type="submit" class="btn btn-primary">Add</button>
+
+
+                   
+                 
+                   <div>
+                    <div>
+</div>
+
+
+
+                    
+</div>
+
                     </div>
+
+
+                  
+
+</div>
+
 
                     <div class="card">
                         <div class="card-body p-0">
@@ -75,5 +100,6 @@
 
 
 </div>
-    <!-- /.content -->
+
+ <!-- /.content -->
 @endsection

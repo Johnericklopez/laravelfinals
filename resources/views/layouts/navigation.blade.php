@@ -81,15 +81,7 @@
                 <a href="{{ route('employee.index') }}" class="nav-link">
                     <i class="fas fa-link"></i>
                     <p>
-                        {{ __('Employee Management') }}
-                    </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ route('employee.index') }}" class="nav-link">
-                    <i class="fas fa-link"></i>
-                    <p>
-                        {{ __('Employee bagoo') }}
+                        {{ __('Users') }}
                     </p>
                 </a>
             </li>
@@ -98,29 +90,14 @@
                 <a href="{{ route('employee.show') }}" class="nav-link">
                     <i class="fas fa-link"></i>
                     <p>
-                        System Management
-                        <i class="fas fa-angle-left right"></i>
+                      BSIT 3A
+                      
                     </p>
                 </a>
-                <ul class="nav nav-treeview" style="display: none;">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Child menu</p>
-                        </a>
-                    </li>
-                </ul>
+               
             </li>
 
-            <li class="nav-item">
-                <a href="{{ route('about') }}" class="nav-link">
-                    <i class="fas fa-link"></i>
-                    <p>
-                        {{ __('User Management') }}
-                    </p>
-                </a>
-            </li>
-
+           
 <!-- 
 
     <nav class="mt-2">
