@@ -30,17 +30,8 @@
                                 <thead >
                                     <tr>
                                         <th>ID</th>
-                                        <th>First Name</th>
-                                        <th>Middle Name</th>
-                                        <th>Last Name</th>
-                                        <th>Address</th>
-                                        <th>Courty</th>
-                                        <th>State</th>
-                                        <th>City</th>
-                                        <th>Zip</th>
-                                        <th>Birthday</th>
-                                        <th>Hired Date</th>
-                                        <th>Department</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
                                           <th>Action</th>
                                     </tr>
                                 </thead>
@@ -48,17 +39,8 @@
                                 @foreach($employees as $infos)
                                     <tr>
                                         <td>{{ $infos->id }}</td>
-                                        <td>{{ $infos->firstname }}</td>
-                                        <td>{{ $infos->middlename }}</td>
-                                        <td>{{ $infos->lastname }}</td>
-                                        <td>{{ $infos->address }}</td>
-                                        <td>{{ $infos->country }}</td>
-                                        <td>{{ $infos->state }}</td>
-                                        <td>{{ $infos->city }}</td>
-                                        <td>{{ $infos->zip }}</td>
-                                         <td>{{ $infos->birth }}</td>
-                                        <td>{{ $infos-> hired }}</td>
-                                        <td>{{ $infos->department}}</td>
+                                        <td>{{ $infos->name }}</td>
+                                        <td>{{ $infos->email }}</td>
                                   
                                         <td scope="col">
 
@@ -72,14 +54,6 @@
                             </a>
 
                                 </td>
-
-                                <td>
-
-                                <a href="{{ url('employee/'.$infos->id.'/delete')}}">
-                            <button style="background-color:red; color:white;" class="btn btn-info btn-sm">
-                            <i  class="fa fa-pencil-square-o" aria-hidden="true"></i> Delete
-                                </button>
-</td>
 
                                     </tr>
                                 @endforeach
